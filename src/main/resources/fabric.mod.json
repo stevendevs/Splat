@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "splat",
+	"version": "${version}",
+	"name": "splat",
+	"description": "Makes your items easier or harder to collect ⚔️.",
+	"authors": [
+		"StevenPlayzz"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/splat",
+		"sources": "https://github.com/stevendevs/splat"
+	},
+	"license": "MIT",
+	"icon": "assets/splat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.stevenplayzz.splat.Splat"
+		],
+		"modmenu": [
+			"me.stevenplayzz.splat.intergration.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"splat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
